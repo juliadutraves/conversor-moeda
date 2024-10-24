@@ -1,6 +1,8 @@
 # conversor-moeda
 
-## Funcionalidades
+O Conversor de Moedas é uma aplicação web simples que permite aos usuários converter valores entre diferentes moedas. Desenvolvida em HTML5, CSS3 e JavaScript puro, a aplicação utiliza taxas de câmbio pré-definidas, eliminando a necessidade de APIs externas. O projeto visa proporcionar uma experiência de conversão rápida e acessível
+
+## Funcionalidades 
 
 - **Entrada de Valor**: Os usuários podem inserir um valor para conversão.
 - **Seleção de Moedas**: Possibilidade de escolher a moeda de origem e a moeda de destino.
@@ -12,3 +14,4 @@
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+

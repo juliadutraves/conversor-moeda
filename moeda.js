@@ -31,4 +31,10 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
 
     // Definir taxa de cambio fixa com ultilização de objeto 
 
+    const exchangeRates = {
+        USD: {EUR:0.93, BRL: 5.71},
+        BRL: {EUR:0.16, USD: 0.18},
+        EUR: { BRL:6.17, USD: 0.16}
+    };
+
 });

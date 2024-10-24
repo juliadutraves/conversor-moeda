@@ -27,4 +27,8 @@ document.getElementById('reset-button').addEventListener('click', function() {
 
 document.getElementById('currency-form').addEventListener('submit', function(event){
     // Obter valores de entrada do formulario
-}
+    const valor = parseFloat(document.getElementById)('amount').value);const daMoeda = document.getElementById('paraMoeda').value;
+
+    // Definir taxa de cambio fixa com ultilização de objeto 
+
+});

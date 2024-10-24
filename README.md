@@ -15,3 +15,11 @@ O Conversor de Moedas é uma aplicação web simples que permite aos usuários c
 - **CSS3**
 - **JavaScript**
 
+## Funcionalidades Principais
+
+Entrada de Valor:
+
+- O usuário pode inserir um valor numérico que deseja converter.
+Seleção de Moedas:
+
+- O sistema oferece um menu suspenso para selecionar a moeda de origem (Dólar, Euro, Real) e a moeda de destino.

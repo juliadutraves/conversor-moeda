@@ -1,31 +1,7 @@
-const exchangeRates = {
-    USD: { EUR: 0.85, BRL: 5.30, USD: 1 },
-    EUR: { USD: 1.18, BRL: 6.24, EUR: 1 },
-    BRL: { USD: 0.19, EUR: 0.16, BRL: 1 },
-};
+document.getElementById('currency-form').addEventListener('submit', function(event){
 
-document.getElementById('converter-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const amount = parseFloat(document.getElementById('amount').value);
-    const fromCurrency = document.getElementById('from-currency').value;
-    const toCurrency = document.getElementById('to-currency').value;
-
-    if (fromCurrency === toCurrency) {
-        document.getElementById('result').innerText = 'Por favor, selecione moedas diferentes.';
-        return;
-    }
-
-    const convertedAmount = amount * exchangeRates[fromCurrency][toCurrency];
-    document.getElementById('result').innerText = 
-        `${amount} ${fromCurrency} é igual a ${convertedAmount.toFixed(2)} ${toCurrency}`;
-});
-
-document.getElementById('reset-button').addEventListener('click', function() {
-    document.getElementById('result').innerText = '';
-});
-
-document.getElementById('currency-form').addEventListener('submit', function(event){
     // Obter valores de entrada do formulario
     const valor = parseFloat(document.getElementById)('amount').value);const daMoeda = document.getElementById('paraMoeda').value;
 
@@ -36,5 +12,14 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
         BRL: {EUR:0.16, USD: 0.18},
         EUR: { BRL:6.17, USD: 0.16}
     };
+
+    if(daMoeda === paraMoeda){
+        valorConvertido = valor;
+        } else{
+            valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
+    }
+
+    let conversao = document.getElementById('conversao'); 
+    conversao.textContent = 'Resultado ${valorConvertido.toFixed(2)} ${paraMoeda}';
 
 });

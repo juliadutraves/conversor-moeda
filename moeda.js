@@ -1,25 +1,30 @@
-document.getElementById('currency-form').addEventListener('submit', function(event){
-
+document.getElementById('currency-form').addEventListener('submit', function (event) {
+ 
     event.preventDefault();
-
-    // Obter valores de entrada do formulario
-    const valor = parseFloat(document.getElementById)('amount').value);const daMoeda = document.getElementById('paraMoeda').value;
-
-    // Definir taxa de cambio fixa com ultilização de objeto 
-
+ 
+    // Obter valores de entrada do formulário
+    const valor = parseFloat(document.getElementById('amount').value);
+    const daMoeda = document.getElementById('daMoeda').value;
+    const paraMoeda = document.getElementById('paraMoeda').value;
+ 
+ 
+    // Definir taxas de câmbio fixas
     const exchangeRates = {
-        USD: {EUR:0.93, BRL: 5.71},
-        BRL: {EUR:0.16, USD: 0.18},
-        EUR: { BRL:6.17, USD: 0.16}
+        USD: { BRL: 5.43, EUR: 0.90 },
+        BRL: { USD: 0.18, EUR: 0.17 },
+        EUR: { USD: 1.11, BRL: 6.01 }
     };
-
-    if(daMoeda === paraMoeda){
-        valorConvertido = valor;
-        } else{
-            valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
+ 
+    // Conversão simples (USD -> BRL, BRL -> EUR, etc.)
+    let valorConvertido;
+    if (daMoeda === paraMoeda) {
+        convertedValue = valor; // Mesma moeda, não há conversão
+    } else {
+        valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
     }
-
-    let conversao = document.getElementById('conversao'); 
-    conversao.textContent = 'Resultado ${valorConvertido.toFixed(2)} ${paraMoeda}';
-
+ 
+    // Exibir resultado
+    const conversao = document.getElementById('conversao');
+    conversao.textContent = `Resultado: ${valorConvertido.toFixed(2)} ${paraMoeda}`;  
+ 
 });

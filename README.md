@@ -2,14 +2,10 @@
 
 ## Indice 🪼
 
-* [Atualizações e Melhorias](#atualizações-e-melhorias-🌟)
-* [GIF](#gif-🐚)
-* [Descrição](#descrição-🪸)
-* [Funcionalidades](#funcionalidades-🐡)
-* [tecnologias utilizadas](#tecnologias-utilizadas-🦑)
-* [Principais funções](#principais-funções-🐠)
-* [Referência](#referência-🐙)
-* [Links de Referência](#links-de-referência)
+* [GIF](#gif)
+* [Descrição](#descrição) 
+* [Funcionalidades](#funcionalidades) 
+* [tecnologias utilizadas](#tecnologias-utilizadas) 
 
 ## Descrição
 
@@ -21,6 +17,11 @@ O Conversor de Moedas é uma aplicação web simples que permite aos usuários c
 - **Seleção de Moedas**: Possibilidade de escolher a moeda de origem e a moeda de destino.
 - **Conversão**: Realiza a conversão utilizando taxas de câmbio fixas.
 - **Reset**: Permite redefinir os valores e seleções para uma nova conversão.
+
+## Gif
+
+![fotoconversor](https://github.com/user-attachments/assets/b8415b5e-6e32-4e4b-8e26-5a527aa2ba6f)
+
 
 ## Tecnologias Utilizadas
 
